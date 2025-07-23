@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT Kreasi Persada Abadi</title>
+  <link rel="icon" href="images/logo.webp" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">Kreasi Persada Abadi</div>
+    <div id="menu-toggle" class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#vision">Visi & Misi</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#address">Address</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Background -->
+  <section id="home" class="hero">
+    <div class="hero-text" data-aos="zoom-in">
+      <h1>Selamat Datang di Kreasi Persada Abadi</h1>
+      <p>Solusi terpercaya untuk kebutuhan Anda.</p>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="section" data-aos="fade-up">
+    <h2>Tentang Kami</h2>
+    <div class="content">
+      <img src="images/kpa.webp" alt="Foto Perusahaan" />
+      <p>
+        PT Kreasi Persada Abadi adalah perusahaan yang bergerak di bidang F&B, Fashion, dan Hospitality, berdiri sejak tahun 2016. 
+        Mereka mengelola beberapa merek seperti Jiwara, kuwehku, Litti, dan Leaf Hotel. 
+        Perusahaan ini menekankan pentingnya kerja keras, ketekunan, kejujuran, kepuasan pelanggan, kenyamanan, pengalaman unik, kualitas produk, inovasi, dan nilai kebaikan. 
+      </p>
+    </div>
+  </section>
+  
+  <section class="moto-section" id="moto">
+  <h2>Moto Kami</h2>
+  <div class="moto-container">
+    <div class="moto-card">
+      <img src="images/knowledge.png" alt="Dapat Dipercaya" />
+      <h3>Knowledge</h3>
+    </div>
+    <div class="moto-card">
+      <img src="images/performance.png" alt="Cepat Tanggap" />
+      <h3>Performance</h3>
+    </div>
+    <div class="moto-card">
+      <img src="images/attitude.png" alt="Transparan" />
+      <h3>Attitude</h3>
+    </div>
+  </div>
+</section>
+
+  <!-- Visi & Misi -->
+  <section id="vision" class="section gray" data-aos="zoom-in">
+    <h2>Visi & Misi</h2>
+    <div class="content">
+      <img src="images/kpa.webp" alt="Visi Misi">
+      <ul>
+        <li><strong>Visi:</strong> Menjadi mitra utama industri Indonesia dalam penyediaan solusi profesional.</li>
+        <li><strong>Misi:</strong> Memberikan pelayanan unggul dan inovatif melalui kolaborasi dan teknologi.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="bisnis" class="bisnis-section">
+  <h2>Bisnis Kami</h2>
+  <div class="bisnis-container">
+    <div class="bisnis-card" onclick="openModal(0)">
+      <img src="images/hotel.jpg" alt="Bisnis 1">
+      <h3>Leaf Hotel</h3>
+      <p>Solusi bahan bangunan lengkap dan terpercaya.</p>
+    </div>
+    <div class="bisnis-card" onclick="openModal(1)">
+      <img src="images/jiwara.jpg" alt="Bisnis 2">
+      <h3>Jiwara Spa</h3>
+      <p>Jasa pembangunan proyek skala kecil hingga besar.</p>
+    </div>
+    <div class="bisnis-card" onclick="openModal(2)">
+      <img src="images/kuwehku.jpeg" alt="Bisnis 3">
+      <h3>kuwehku.ID</h3>
+      <p>Pengiriman tepat waktu dan aman untuk segala kebutuhan.</p>
+    </div>
+    <div class="bisnis-card" onclick="openModal(3)">
+      <img src="images/liti.jpg" alt="Bisnis 4">
+      <h3>L I T I</h3>
+      <p>Outlet fisik kami hadir di berbagai kota di Indonesia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Modals -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="modal-title"></h2>
+    <img id="modal-img" src="" alt="">
+    <p id="modal-desc"></p>
+    <a id="modal-link" href="#" target="_blank" class="modal-link">Kunjungi Instagram</a>
+  </div>
+</div>
+
+  <!-- Contact -->
+  <section id="contact" class="section" data-aos="fade-left">
+    <h2>Kontak Kami</h2>
+    <form>
+      <input type="text" placeholder="Nama" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Pesan Anda..." required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <!-- Alamat Kami dengan Google Maps -->
+<section id="alamat" style="padding: 40px 20px; background-color: #8a8989;">
+  <div class="container" style="max-width: 1000px; margin: auto;">
+    <h2 style="text-align: center; margin-bottom: 30px; font-size: 32px; color: #000000;">Alamat Kami</h2>
+
+    <p style="text-align: center; font-size: 18px; margin-bottom: 20px;">
+      PT. Kreasi Persada Abadi<br>
+      Jl. Raya Pos Pengumben No.4, RT.10/RW.4, Sukabumi Utara, Kec. Kb. Jeruk, Kota Jakarta Barat, DKI Jakarta<br>
+      Telp: (021) 1234-5678
+    </p>
+
+    <div class="map-container" style="overflow:hidden; padding-bottom:56.25%; position:relative; height:0; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3633586114497!2d106.7771405!3d-6.2157197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f76596637baf%3A0xb6cb73b3ce0b6c9a!2sPt.kreasi%20persada%20abadi!5e0!3m2!1sid!2sid!4v1753193456260!5m2!1sid!2sid"
+        width="100%" 
+        height="100%" 
+        style="position:absolute; top:0; left:0; border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 KreasiPersadaAbadi. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
