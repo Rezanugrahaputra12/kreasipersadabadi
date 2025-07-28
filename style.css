@@ -436,3 +436,38 @@ footer {
     display: none;
   }
 }
+
+/* === Default (Desktop) === */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* === Responsive untuk HP === */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  nav.navbar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+}
