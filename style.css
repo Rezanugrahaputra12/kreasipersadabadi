@@ -1,4 +1,4 @@
-/* RESET & GLOBAL */
+/* ========== RESET & GLOBAL ========== */
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ body {
   overflow-x: hidden;
 }
 
-/* === HEADER & NAVIGATION === */
+/* ========== HEADER & NAVIGATION ========== */
 header {
   position: fixed;
   top: 0;
@@ -28,7 +28,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .logo {
@@ -63,6 +63,7 @@ header {
 nav {
   display: none;
 }
+
 nav.active {
   display: block;
   position: absolute;
@@ -72,12 +73,15 @@ nav.active {
   padding: 15px;
   border-radius: 8px;
 }
+
 nav ul {
   list-style: none;
 }
+
 nav ul li {
   margin: 10px 0;
 }
+
 nav ul li a {
   text-decoration: none;
   color: #e9e5e5;
@@ -89,16 +93,22 @@ nav ul li a {
     position: static;
     background: none;
   }
+
   .menu-toggle {
     display: none;
   }
+
   nav ul {
     display: flex;
     gap: 20px;
   }
+
+  nav ul li {
+    margin: 0;
+  }
 }
 
-/* === HERO SECTION === */
+/* ========== HERO SECTION ========== */
 .hero {
   height: 100vh;
   width: 100%;
@@ -110,25 +120,29 @@ nav ul li a {
   text-align: center;
   padding: 50px 20px;
 }
+
 .hero-text {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
 }
 
-/* === SECTION GENERAL === */
+/* ========== SECTION ========== */
 .section {
   padding: 80px 20px;
   width: 100%;
 }
+
 .section.gray {
   background: #f4f4f4;
 }
+
 .section h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 30px;
 }
+
 .section .content {
   display: flex;
   flex-wrap: wrap;
@@ -137,24 +151,20 @@ nav ul li a {
   align-items: center;
   text-align: left;
 }
+
 .section .content img {
   width: 100%;
   max-width: 600px;
   border-radius: 10px;
 }
+
 .section .content p,
 .section .content ul {
   flex: 1;
   font-size: 1.1rem;
 }
-.section img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
-  border-radius: 12px;
-}
 
-/* === FORM SECTION === */
+/* ========== FORM SECTION ========== */
 form {
   display: flex;
   flex-direction: column;
@@ -163,6 +173,7 @@ form {
   margin: auto;
   font-size: 1rem;
 }
+
 form input,
 form textarea {
   padding: 12px;
@@ -171,6 +182,7 @@ form textarea {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
+
 form button {
   padding: 12px;
   font-size: 1rem;
@@ -181,9 +193,9 @@ form button {
   cursor: pointer;
 }
 
-/* === BISNIS SECTION === */
+/* ========== BISNIS SECTION ========== */
 .bisnis-section {
-  padding: 60px 40px;
+  padding: 60px 20px;
   background: #f9f9f9;
   text-align: center;
 }
@@ -217,23 +229,22 @@ form button {
 
 .bisnis-card img {
   width: 100%;
-  height: 275px; /* naikkan tinggi gambar agar lebih dominan */
+  height: 275px;
   object-fit: cover;
 }
 
 .bisnis-card h3 {
-  margin: 10px 0 5px; /* sedikit dikurangi atas bawah */
+  margin: 10px 0 5px;
   font-size: 1.2em;
 }
 
 .bisnis-card p {
   font-size: 14px;
-  padding: 0 10px 10px; /* ✅ padding diperkecil */
+  padding: 0 10px 10px;
   color: #000000;
 }
 
-
-/* === MODAL === */
+/* ========== MODAL ========== */
 .modal {
   display: none;
   position: fixed;
@@ -245,6 +256,7 @@ form button {
   height: 100%;
   background-color: rgba(0,0,0,0.5);
 }
+
 .modal-content {
   background-color: #fff;
   margin: auto;
@@ -255,20 +267,22 @@ form button {
   position: relative;
   animation: fadeIn 0.4s ease-in-out;
 }
+
 .modal-content img {
   width: 100%;
   height: auto;
   margin-top: 10px;
 }
+
 .modal-content h2 {
   margin-bottom: 10px;
 }
+
 .modal-content p {
   font-size: 15px;
   margin-bottom: 15px;
 }
 
-/* Tombol IG di tengah */
 .modal-link {
   display: block;
   margin: 0 auto;
@@ -282,6 +296,7 @@ form button {
   width: fit-content;
   transition: 0.3s ease;
 }
+
 .modal-link:hover {
   background: #005fa3;
 }
@@ -299,30 +314,7 @@ form button {
   to {opacity: 1; transform: translateY(0);}
 }
 
-/* === FOOTER === */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #111;
-  color: #fff;
-  font-size: 1rem;
-}
-
-/* === RESPONSIVE TWEAKS === */
-@media (max-width: 768px) {
-  .section .content {
-    flex-direction: column;
-    text-align: center;
-  }
-  .bisnis-card {
-    width: 90%;
-  }
-  .modal-content {
-    width: 95%;
-  }
-}
-
-/* === MOTO SECTION (REVISI) === */
+/* ========== MOTO SECTION ========== */
 .moto-section {
   padding: 80px 20px;
   background-color: #fff;
@@ -330,32 +322,27 @@ footer {
 }
 
 .moto-section h2 {
-  font-size: 2.8rem; /* Sedikit diperbesar */
+  font-size: 2.8rem;
   color: #000000;
   margin-bottom: 40px;
-  /* HAPUS GARIS BAWAH */
 }
 
 .moto-container {
   display: flex;
   justify-content: center;
-  gap: 40px; /* Sedikit lebih longgar */
+  gap: 40px;
   flex-wrap: wrap;
 }
 
-/* === MOTO CARD (FINAL) === */
 .moto-card {
-  /* layout & ukuran */
-  width: 300px;            /* lebar kartu */
-  height: 370px;           /* tinggi konsisten untuk rata heading */
+  width: 300px;
+  height: 370px;
   padding: 30px;
-  display: flex;           /* susun vertikal */
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-
-  /* visual */
   background-color: #f3f3f3;
   border: 6px solid #ffffff;
   border-radius: 25px;
@@ -367,24 +354,20 @@ footer {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* gambar di dalam kartu */
 .moto-card img {
   width: 185px;
   height: 185px;
   margin-bottom: 20px;
 }
 
-/* judul moto */
 .moto-card h3 {
   font-size: 1.2rem;
   color: #141415;
-  margin-top: auto;        /* pastikan sejajar di bagian bawah isi */
+  margin-top: auto;
+  min-height: 40px;
   position: relative;
-  display: inline-block;
-  min-height: 40px;        /* tinggi minimal sama untuk semua judul */
 }
 
-/* garis putus‑putus di bawah judul */
 .moto-card h3::after {
   content: '';
   display: block;
@@ -394,59 +377,46 @@ footer {
   margin-top: 6px;
 }
 
-/* === ALAMAT SECTION === */
-.alamat-section {
-  padding: 60px 40px;
-  background-color: #f9f9f9;
+/* ========== CONTAINER (GENERAL) ========== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+/* ========== FOOTER ========== */
+footer {
   text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+  font-size: 1rem;
 }
 
-.alamat-section h2 {
-  font-size: 2.5em;
-  margin-bottom: 40px;
-  color: #333;
-}
-
-.alamat-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-  text-align: left;
-}
-
-.alamat-teks {
-  max-width: 400px;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #444;
-}
-
-.alamat-teks h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.alamat-maps {
-  flex: 1;
-  min-width: 300px;
-  max-width: 500px;
-  height: 250px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
-
-@media screen and (max-width: 768px) {
-  .alamat-container {
+/* ========== RESPONSIVE TWEAKS ========== */
+@media (max-width: 768px) {
+  .section .content {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
-  .alamat-teks {
-    text-align: center;
+  .bisnis-card {
+    width: 90%;
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+
+  .alamat-container,
+  .moto-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .alamat-container iframe {
+    width: 100%;
+    height: 200px;
   }
 }
