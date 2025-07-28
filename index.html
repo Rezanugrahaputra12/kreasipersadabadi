@@ -14,24 +14,22 @@
 
   <!-- Navbar -->
   <header>
+  <div class="navbar-container">
     <div class="logo">Kreasi Persada Abadi</div>
-    <div id="menu-toggle" class="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div id="menu-toggle" class="menu-toggle" onclick="toggleNavbar()">
+      ☰
     </div>
-    <nav id="navbar">
-
-       <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav id="navbar" class="navbar">
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#vision">Visi & Misi</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#address">Address</a></li>
+        <li><a href="#alamat">Address</a></li>
       </ul>
     </nav>
-  </header>
+  </div>
+</header>
 
   <!-- Hero Background -->
   <section id="home" class="hero">
@@ -161,18 +159,23 @@
     <p>&copy; 2025 KreasiPersadaAbadi. All rights reserved.</p>
   </footer>
 
-  <!-- JavaScript -->
-  <script src="script.js"></script>
+  <!-- script.js -->
+<script src="script.js"></script>
 
-  <!-- AOS JS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js">
-    
+<!-- AOS (Animation on Scroll) -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Script Tambahan -->
+<script>
+  // Inisialisasi AOS
   AOS.init();
 
-    function toggleMenu() {
+  // Fungsi toggle menu navbar untuk tampilan mobile (hamburger menu)
+  function toggleMenu() {
     const nav = document.getElementById("navLinks");
     nav.classList.toggle("show");
   }
-  </script>
+</script>
+
 </body>
 </html>
