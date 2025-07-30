@@ -11,7 +11,7 @@ toggle.addEventListener('click', () => {
 const bisnisDetails = [
   {
     title: "Leaf Hotel",
-    desc: "Temukan kenyamanan alami di tengah hiruk pikuk kota. Leaf Hotel menghadirkan suasana tenang, hangat, dan elegan — tempat sempurna untuk beristirahat, bekerja, atau bersantai. Dari kamar yang dirancang dengan detail hingga pelayanan yang ramah, setiap momen di sini akan membuat Anda merasa seperti di rumah, tapi jauh lebih tenang.",
+    desc: "Rasakan kenyamanan alami di Leaf Hotel — tempat istirahat yang tenang, hangat, dan penuh ketulusan. Cocok untuk melepas penat atau sekadar menikmati waktu berkualitas.",
     ig: "https://www.instagram.com/leaf_hotel?igsh=MWV5cWh2MDAyaXRjYw==",
     img: "images/hotel.jpg" //
   },
