@@ -1,34 +1,41 @@
+// Toggle Menu
 const toggle = document.getElementById("menu-toggle");
 const navbar = document.getElementById("navbar");
 
-menuToggle.addEventListener('click', () => {
-  menuToggle.classList.toggle('open');
+toggle.addEventListener('click', () => {
+  toggle.classList.toggle('open');
   navbar.classList.toggle('show');
 });
 
+// Data Bisnis
 const bisnisDetails = [
   {
     title: "Leaf Hotel",
-    desc: "Kami menyediakan bahan bangunan lengkap dengan kualitas tinggi dan harga bersaing untuk proyek rumah, gedung, dan industri.",
-    ig: "https://www.instagram.com/leaf_hotel?igsh=MWV5cWh2MDAyaXRjYw=="
+    desc: "Temukan kenyamanan alami di tengah hiruk pikuk kota. Leaf Hotel menghadirkan suasana tenang, hangat, dan elegan — tempat sempurna untuk beristirahat, bekerja, atau bersantai. Dari kamar yang dirancang dengan detail hingga pelayanan yang ramah, setiap momen di sini akan membuat Anda merasa seperti di rumah, tapi jauh lebih tenang.",
+    ig: "https://www.instagram.com/leaf_hotel?igsh=MWV5cWh2MDAyaXRjYw==",
+    img: "images/hotel.jpg" //
   },
   {
     title: "Jiwara Spa",
-    desc: "Layanan konstruksi terpercaya mulai dari perencanaan, desain, hingga eksekusi untuk berbagai jenis bangunan.",
-    ig: "https://www.instagram.com/__jiwara__?igsh=MWlzNjh6Y3cxMzh5Yw=="
+    desc: "Lepaskan penat, pulihkan energi. Di Jiwara Spa Reflexology, setiap pijatan menyentuh titik-titik relaksasi terdalam Anda. Rasakan ketenangan jiwa dan raga dalam suasana yang hangat, bersih, dan penuh ketulusan. Karena tubuh Anda berhak untuk dimanjakan.",
+    ig: "https://www.instagram.com/__jiwara__?igsh=MWlzNjh6Y3cxMzh5Yw==",
+    img: "images/jiwara.jpg"
   },
   {
     title: "Kuwehku.ID",
-    desc: "Melayani pengiriman material dan barang dengan armada luas dan sistem tracking modern.",
-    ig: "https://www.instagram.com/kuwehku.id?igsh=YnRmN21kbWFwdDNs"
+    desc: "Rasa tradisi yang tak pernah basi. Di Kuwehku.ID, kami menghadirkan cita rasa jajanan khas Indonesia yang otentik, hangat, dan selalu bikin rindu. Dari klepon sampai kue lapis, setiap gigitan membawa Anda pulang ke kenangan manis masa kecil. Yuk, cicipi nostalgia di setiap kue!",
+    ig: "https://www.instagram.com/kuwehku.id?igsh=YnRmN21kbWFwdDNs",
+    img: "images/kuwehku.jpeg"
   },
   {
     title: "L I T I",
-    desc: "Temukan produk terbaik kami di berbagai outlet resmi di seluruh Indonesia.",
-    ig: "https://www.instagram.com/liti__________?igsh=MTRpMnVueDZndGNqbg=="
+    desc: "Berani tampil beda, tetap anggun dalam setiap langkah. L I T I menghadirkan koleksi fashion modern dengan sentuhan minimalis dan karakter kuat. Untuk kamu yang ingin tampil stylish tanpa harus berteriak — karena gaya sejati tak butuh banyak kata.",
+    ig: "https://www.instagram.com/liti__________?igsh=MTRpMnVueDZndGNqbg==",
+    img: "images/liti.jpg"
   }
 ];
 
+// Buka Modal
 function openModal(index) {
   const data = bisnisDetails[index];
   document.getElementById("modal-title").innerText = data.title;
@@ -38,6 +45,7 @@ function openModal(index) {
   document.getElementById("modal").style.display = "block";
 }
 
+// Tutup Modal
 function closeModal() {
   document.getElementById("modal").style.display = "none";
 }
