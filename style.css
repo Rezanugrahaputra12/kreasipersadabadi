@@ -540,3 +540,227 @@ footer {
     align-items: center;
   }
 }
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 16px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Style */
+.logo {
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Menu Icon */
+.menu-toggle {
+  font-size: 26px;
+  cursor: pointer;
+  display: block;
+}
+
+/* Nav Menu */
+.navbar {
+  display: none;
+  flex-direction: column;
+  background-color: #444;
+  margin-top: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar ul li {
+  border-top: 1px solid #555;
+}
+
+.navbar ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar ul li a:hover {
+  background-color: #555;
+}
+
+/* Show nav when active */
+.navbar.show {
+  display: flex;
+}
+
+/* Desktop view */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .navbar {
+    display: flex !important;
+    flex-direction: row;
+    background-color: transparent;
+    margin-top: 0;
+  }
+
+  .navbar ul {
+    display: flex;
+    gap: 16px;
+  }
+
+  .navbar ul li {
+    border: none;
+  }
+
+  .navbar ul li a {
+    padding: 8px 12px;
+  }
+
+  .navbar ul li a:hover {
+    background-color: #666;
+  }
+}
+
+/* ======== FIX Overflow dan Layout Header Korporat Style ======== */
+
+/* Pastikan tidak ada scroll horizontal */
+body, html {
+  overflow-x: hidden;
+}
+
+/* Navbar container lebih rapi dan responsif */
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styling */
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Hamburger menu */
+.menu-toggle {
+  font-size: 28px;
+  cursor: pointer;
+  margin-left: 12px;
+  margin-right: 4px;
+}
+
+/* Navigation styling */
+.navbar {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #2c2c2c;
+  padding: 10px 20px;
+  position: absolute;
+  top: 60px;
+  right: 15px;
+  width: calc(100% - 30px);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  z-index: 999;
+}
+
+/* Show on toggle */
+.navbar.show {
+  display: flex;
+}
+
+/* Nav items */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.navbar ul li {
+  width: 100%;
+  border-bottom: 1px solid #444;
+}
+
+.navbar ul li:last-child {
+  border-bottom: none;
+}
+
+.navbar ul li a {
+  display: block;
+  color: white;
+  padding: 12px 0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar ul li a:hover {
+  background-color: #444;
+}
+
+/* Desktop View */
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .navbar {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: none;
+    padding: 0;
+    box-shadow: none;
+    width: auto;
+  }
+
+  .navbar ul {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    border: none;
+  }
+
+  .navbar ul li a {
+    padding: 8px 12px;
+    transition: background 0.3s;
+  }
+
+  .navbar ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+}

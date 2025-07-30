@@ -15,7 +15,7 @@ const bisnisDetails = [
   {
     title: "Jiwara Spa",
     desc: "Layanan konstruksi terpercaya mulai dari perencanaan, desain, hingga eksekusi untuk berbagai jenis bangunan.",
-    ig: "https://instagram.com/bisnis2"
+    ig: "https://www.instagram.com/__jiwara__?igsh=MWlzNjh6Y3cxMzh5Yw=="
   },
   {
     title: "Kuwehku.ID",

@@ -13,12 +13,12 @@
 <body>
 
   <!-- Navbar -->
-  <header>
+<header>
   <div class="navbar-container">
-    <div class="logo">Kreasi Persada Abadi</div>
-    <div id="menu-toggle" class="menu-toggle" onclick="toggleNavbar()">
-      ☰
+    <div class="logo-container">
+      <div class="logo">Kreasi Persada Abadi</div>
     </div>
+    <div id="menu-toggle" class="menu-toggle" onclick="toggleNavbar()">☰</div>
     <nav id="navbar" class="navbar">
       <ul>
         <li><a href="#home">Home</a></li>
@@ -30,6 +30,7 @@
     </nav>
   </div>
 </header>
+
 
   <!-- Hero Background -->
   <section id="home" class="hero">
@@ -171,9 +172,9 @@
   AOS.init();
 
   // Fungsi toggle menu navbar untuk tampilan mobile (hamburger menu)
-  function toggleMenu() {
-    const nav = document.getElementById("navLinks");
-    nav.classList.toggle("show");
+  function toggleNavbar() {
+    const navbar = document.getElementById('navbar');
+    navbar.classList.toggle('show');
   }
 </script>
 
