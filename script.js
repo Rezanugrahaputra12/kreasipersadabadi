@@ -1,9 +1,9 @@
 const toggle = document.getElementById("menu-toggle");
 const navbar = document.getElementById("navbar");
 
-toggle.addEventListener("click", () => {
-  navbar.classList.toggle("active");
-  toggle.classList.toggle("open");
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('open');
+  navbar.classList.toggle('show');
 });
 
 const bisnisDetails = [

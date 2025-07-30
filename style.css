@@ -5,11 +5,8 @@
   box-sizing: border-box;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
-}
-
-body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f8f8f8;
@@ -471,11 +468,12 @@ footer {
   .hamburger {
   display: block;
   position: absolute;
-  top: 50%;
+  top: 16px;
   right: 16px; /* Jarak dari kanan, bisa disesuaikan */
   transform: translateY(-50%); /* Agar vertikalnya sejajar di tengah */
   font-size: 26px;
   cursor: pointer;
+  z-index: 1000;
 }
 
   .navbar {
@@ -525,7 +523,7 @@ footer {
 /* Responsive */
 @media screen and (max-width: 768px) {
   .menu-toggle {
-    display: block;
+    display: flex;
   }
 
   .navbar {
